@@ -1,0 +1,52 @@
+Summary:
+    Using the LMEM and the natural log method both gave slightly more accurate results for estimating alpha. The four models (100 Linear un-logged, 100 Linear logged, LMEM un-logged, LMEM logged) are identical to the hundreds place with mean alpha error values of 0.002588, 0.001063, 0.000481, and 0.000010 respectively. The standard deviations for the the alpha values are almost identical over all four methods.
+    The un-logged LMEM had the best results for estimating the corrected average slope of all 100 patients. Other methods errors were approximately 0.05 compared to the un-logged LMEM which resulted in an error of approximately 0.01. The LMEM methods both had significantly lower standard deviations and smaller confidence intervals for the corrected slopes when compared to the 100 Linear regression methods.
+
+Future Improvements:
+    Find a better way to estimate slope on corrected data, as alpha estimate is very accurate but corrected slope estimate is not.
+
+True Alpha: 1.02
+True Slope: -1.2
+
+Model Comparison Results after 1,000 runs:
+
+100 Linear Regressions:
+    Un-Logged:
+        Alpha:
+            Mean: 1.0225888200338809
+            StDev: 0.004965139374968292
+            ConInt: (1.012857146858943, 1.0323204932088188)
+        Corrected Slope:
+            Mean: -1.2524128930041798
+            StDev: 1.3058817618798495
+            ConInt: (-3.811941146288685, 1.3071153602803254)
+    Logged:
+        Alpha:
+            Mean: 1.0210633254345032
+            StDev: 0.00473353839443679
+            ConInt: (1.011785590181407, 1.0303410606875993)
+        Corrected Slope:
+            Mean: -1.252379375708781
+            StDev: 1.306780393344219
+            ConInt: (-3.8136689466634506, 1.3089101952458881)
+
+Linear Mixed Effects Model:
+    Un-Logged:
+        Alpha:
+            Mean: 1.020481144806041
+            StDev: 0.004760228316186873
+            ConInt: (1.0111510973063147, 1.0298111923057671)
+        Corrected Slope:
+            Mean: -1.198681950617122
+            StDev: 0.13430558865290562
+            ConInt: (-1.461920904376817, -0.9354429968574269)
+    Logged:
+        Alpha:
+            Mean: 1.019989914597157
+            StDev: 0.004725966493868448
+            ConInt: (1.0107270202691747, 1.0292528089251392)
+        Corrected Slope:
+            Mean: -1.2419575381302408
+            StDev: 0.13591721912300173
+            ConInt: (-1.5083552876113242, -0.9755597886491574)
+            
